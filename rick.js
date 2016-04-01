@@ -45,10 +45,12 @@ if (!String.prototype.format) {
 
 // ARRAY
 
+// ReSharper disable once NativeTypePrototypeExtending
 Array.prototype.popAll = function () {
     this.splice(0, this.length);
 };
 
+// ReSharper disable once NativeTypePrototypeExtending
 Array.prototype.contains = function (input) {
     for (var i = 0; i < this.length; i++) {
         if (this[i] === input) {
@@ -58,18 +60,21 @@ Array.prototype.contains = function (input) {
     return false;
 };
 
+// ReSharper disable once NativeTypePrototypeExtending
 Array.prototype.max = function () {
     return Math.max.apply(null, this);
 };
 
 // DATE
 
+// ReSharper disable once NativeTypePrototypeExtending
 Date.prototype.addDays = function (days) {
     var date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
     return date;
 }
 
+// ReSharper disable once NativeTypePrototypeExtending
 Date.prototype.yyyymmdd = function (separator) {
     var yyyy = this.getFullYear().toString();
     var mm = (this.getMonth() + 1).toString(); // getMonth() is zero-based
