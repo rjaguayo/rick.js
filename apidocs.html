@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rick.js API Documentation</title>
+</head>
+<body>
+	<div id="rick-container" style='font-family: monospace;'>
+		<h2>Rick.js API documentation</h2>
+		<p>click on a link below to view a detailed description of a function exposed by Rick.js</p>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>string.contains</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>string.replaceAll</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>string.isNullOrWhiteSpace</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>string.format</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>array.popAll</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>array.max</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>date.addDays</a><br/>
+		&nbsp;&nbsp;<a class="rick-anchor" href='#'>data.yyymmdd</a>
+	</div>
+
+	<script type='text/javascript'>
+		var rickAnchors = document.getElementsByClassName('rick-anchor');
+		for(var i = 0; i < rickAnchors.length; i++){
+			var rickAnchor = rickAnchors[i];
+			rickAnchor.addEventListener('click', function(){
+				var rickContainer = document.getElementById('rick-container');
+				rickContainer.innerHTML = '<iframe width="420" height="315" src="https://www.youtube.com/embed/DLzxrzFCyOs?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+				return false;
+			});
+		}
+	</script>
+</body>
+</html>
+
+
+
